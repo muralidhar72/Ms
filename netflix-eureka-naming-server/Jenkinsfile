@@ -6,11 +6,11 @@ pipeline {
     stages {
             stage('Check env') {
               steps {
-                sh "mvn -v"
-                sh "java -version"
-                sh "javac -version"
-                sh "whoami"
-                sh "printenv"
+                bat "mvn -v"
+                bat "java -version"
+                bat "javac -version"
+                bat "whoami"
+                bat "printenv"
               }
             }
             // Edit the POM file for the application, setting the version to the small commit hash
