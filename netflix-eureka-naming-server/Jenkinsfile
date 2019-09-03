@@ -18,7 +18,7 @@ pipeline {
                     script {
 						 print "** current dir: " + pwd() + " **"
                         def pomFileName = pwd() + "/netflix-eureka-naming-server/pom.xml"
-                        def version = env.SMALL_HASH
+                        def version = "ImageVersion"
                         def pomContent = readFile (pomFileName)
 
                         print "** current dir: " + pwd() + " **"
