@@ -1,0 +1,17 @@
+version: '3.3'
+
+networks:
+  ms-net:
+    external: false
+
+services:
+  Eurekha:
+    image: pmr2791/pmr27918791:Eurekha
+    networks:
+      - ms-net
+    ports:
+      - "8761:8761"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
