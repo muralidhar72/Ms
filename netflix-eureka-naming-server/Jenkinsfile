@@ -32,7 +32,7 @@ pipeline {
             }
             stage('Compile, test, package and push to registry') {
               steps {
-                bat "mvn clean install"
+                bat "cd netflix-eureka-naming-server && mvn clean install"
               }
             }
             // Just double check the small git hash is still there
