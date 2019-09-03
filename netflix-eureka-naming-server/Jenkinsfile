@@ -10,7 +10,6 @@ pipeline {
                 bat "java -version"
                 bat "javac -version"
                 bat "whoami"
-                bat "printenv"
               }
             }
             // Edit the POM file for the application, setting the version to the small commit hash
