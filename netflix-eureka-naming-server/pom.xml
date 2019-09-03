@@ -80,7 +80,6 @@
 					</execution>
 				</executions>
 				<configuration>
-					<dockerConfigFile></dockerConfigFile>
 					<useProxy>false</useProxy>
 					<repository>${docker.image.prefix}/${project.artifactId}</repository>
 					<tag>${version}</tag>
